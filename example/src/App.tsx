@@ -2,7 +2,7 @@ import * as React from "react";
 import {
   createBreakpointContext,
   withBreakpointProps
-} from "winderful-react-breakpoints";
+} from "@winderful/react-breakpoints";
 import "./App.css";
 
 import logo from "./logo.svg";

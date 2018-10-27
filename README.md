@@ -19,7 +19,7 @@ yarn add github:nathanwinder/react-breakpoints
 - Custom breakpoints with valid typeing and intellisense support.
 
 ```typescript
-import { createBreakpointContext } from "react-breakpoints";
+import { createBreakpointContext } from "@winderful/react-breakpoints";
 
 const BreakpointContext = createBreakpointContext(
   window,
@@ -34,7 +34,7 @@ import { Dimensions } from "react-native";
 import {
   createBreakpointContext,
   NativeResizeEventSource
-} from "react-breakpoints";
+} from "@winderful/react-breakpoints";
 
 const BreakpointContext = createBreakpointContext(
   new NativeResizeEventSource(Dimensions),

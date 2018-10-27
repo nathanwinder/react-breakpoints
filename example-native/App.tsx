@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Dimensions, StyleSheet, Text, View } from "react-native";
+import { Dimensions, StyleSheet, Text, View } from "@winderful/react-breakpoints";
 import {
   createBreakpointContext,
   NativeResizeEventSource,

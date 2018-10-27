@@ -735,6 +735,10 @@ which@^1.2.9:
   dependencies:
     isexe "^2.0.0"
 
+"winderful-react-breakpoints@github:nathanwinder/react-breakpoints":
+  version "0.1.0"
+  resolved "https://codeload.github.com/nathanwinder/react-breakpoints/tar.gz/5f39823095f5dc4df4730c2e6dea62ea75df45f6"
+
 wordwrap@~0.0.2:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
