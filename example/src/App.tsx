@@ -42,12 +42,12 @@ const SlidingBreakpointContext = createBreakpointContext<
     return ["mob"];
   }
   if (window.innerWidth < 992) {
-    return ["mob", "tab"];
+    return ["tab", "mob"];
   }
   if (window.innerWidth < 1200) {
-    return ["mob", "tab", "desk"];
+    return ["desk", "tab", "mob"];
   }
-  return ["mob", "tab", "desk", "wide"];
+  return ["wide", "desk", "mob", "tab"];
 });
 
 const DetailParagraph = withBreakpointProps(
