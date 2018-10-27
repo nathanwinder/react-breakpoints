@@ -1,4 +1,4 @@
-# winderful-react-breakpoints
+# @winderful/react-breakpoints
 
 Flexible TypeScript breakpoint components that utilize React's Context and HOCs. Supports React and React Native.
 
@@ -146,8 +146,9 @@ All are welcome to contribute. Please follow these steps when contributing. Sugg
 1. I am using VSCode for editing, feel free to use the editor of your choice.
 2. Once you have cloned the repo run yarn in the root directory and the "example" directory.
 3. In the root directory run `yarn link`
-4. Change directory to `example` and run `yarn link "winderful-react-breakpoints"`
-5. You have now created a symlink from the example React app to the root library, any changes you make in the root will be reflected in example once you build.
+4. Change directory to `example` and run `yarn link "@winderful/react-breakpoints"`
+5. You have now created a symlink from the example React app to the root library, any changes you make in the root will be reflected in example once you build. NOTE: This does not work in the "example-native" project, I believe CRNA still has problems with symlinks. I tried `yarn add file:../` but this hangs indefinately at 1116/1117. Please share any thoughts/suggestions.
+
 6. In the root directory run `yarn build` to generate a build with your changes.
 7. In the example directory run `yarn start` to launch the example React application.
 
@@ -174,3 +175,13 @@ https://github.com/wbyoung/avn
 ```
 > yarn global add avn avn-nvm
 ```
+
+#### Troubleshooting
+
+- I have issues with RN Packager and have to run this anytime my IP address changes
+
+```
+> $env:REACT_NATIVE_PACKAGER_HOSTNAME = "*my-ip-address*"
+```
+
+- Cant `yarn link` example-native. I belive CRNA has a known issue with Symlinks. Not sure what the solution for this is. Open to suggestions.

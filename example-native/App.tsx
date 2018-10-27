@@ -1,10 +1,10 @@
-import * as React from "react";
-import { Dimensions, StyleSheet, Text, View } from "@winderful/react-breakpoints";
 import {
   createBreakpointContext,
   NativeResizeEventSource,
   withBreakpointProps
-} from "winderful-react-breakpoints";
+} from "@winderful/react-breakpoints";
+import * as React from "react";
+import { Dimensions, StyleSheet, Text, View } from "react-native";
 
 const BreakpointContext = createBreakpointContext(
   new NativeResizeEventSource(Dimensions),

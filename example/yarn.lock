@@ -46,6 +46,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@winderful/react-breakpoints@github:nathanwinder/react-breakpoints":
+  version "0.1.0"
+  resolved "https://codeload.github.com/nathanwinder/react-breakpoints/tar.gz/2eca08ae63fb10cfbbded2e9e8ce66481e982de0"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -7339,10 +7343,6 @@ widest-line@^2.0.0:
   resolved "https://registry.yarnpkg.com/widest-line/-/widest-line-2.0.1.tgz#7438764730ec7ef4381ce4df82fb98a53142a3fc"
   dependencies:
     string-width "^2.1.1"
-
-"winderful-react-breakpoints@github:nathanwinder/react-breakpoints":
-  version "0.1.0"
-  resolved "https://codeload.github.com/nathanwinder/react-breakpoints/tar.gz/5f39823095f5dc4df4730c2e6dea62ea75df45f6"
 
 window-size@0.1.0:
   version "0.1.0"

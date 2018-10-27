@@ -621,6 +621,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@winderful/react-breakpoints@github:nathanwinder/react-breakpoints":
+  version "0.1.0"
+  resolved "https://codeload.github.com/nathanwinder/react-breakpoints/tar.gz/2eca08ae63fb10cfbbded2e9e8ce66481e982de0"
+
 abab@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.0.tgz#aba0ab4c5eee2d4c79d3487d85450fb2376ebb0f"
