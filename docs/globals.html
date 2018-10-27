@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>winderful-react-breakpoints | winderful-react-breakpoints</title>
+	<title>@winderful/react-breakpoints | @winderful/react-breakpoints</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -879,7 +879,7 @@ img { max-width: 100%; }
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">winderful-react-breakpoints</a></strong>
+					<strong><a href="index.html">@winderful/react-breakpoints</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -914,7 +914,7 @@ img { max-width: 100%; }
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
-			<h1 id="winderful-react-breakpoints">winderful-react-breakpoints</h1>
+			<h1 id="-winderful-react-breakpoints">@winderful/react-breakpoints</h1>
 			<p>Flexible TypeScript breakpoint components that utilize React&#39;s Context and HOCs. Supports React and React Native.</p>
 			<h2 id="installation-npm-comming-soon-">Installation (<em>NPM Comming Soon</em>)</h2>
 			<pre><code>npm <span class="hljs-keyword">install</span> github:nathanwinder/react-breakpoints</code></pre><p>or</p>
@@ -922,7 +922,7 @@ img { max-width: 100%; }
 			<ul>
 				<li>Custom breakpoints with valid typeing and intellisense support.</li>
 			</ul>
-			<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { createBreakpointContext } <span class="hljs-keyword">from</span> <span class="hljs-string">"react-breakpoints"</span>;
+			<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { createBreakpointContext } <span class="hljs-keyword">from</span> <span class="hljs-string">"@winderful/react-breakpoints"</span>;
 
 <span class="hljs-keyword">const</span> BreakpointContext = createBreakpointContext(
   <span class="hljs-built_in">window</span>,
@@ -935,7 +935,7 @@ img { max-width: 100%; }
 <span class="hljs-keyword">import</span> {
   createBreakpointContext,
   NativeResizeEventSource
-} <span class="hljs-keyword">from</span> <span class="hljs-string">"react-breakpoints"</span>;
+} <span class="hljs-keyword">from</span> <span class="hljs-string">"@winderful/react-breakpoints"</span>;
 
 <span class="hljs-keyword">const</span> BreakpointContext = createBreakpointContext(
   <span class="hljs-keyword">new</span> NativeResizeEventSource(Dimensions),
@@ -1027,9 +1027,11 @@ const App = () =&gt; (
 				<li>I am using VSCode for editing, feel free to use the editor of your choice.</li>
 				<li>Once you have cloned the repo run yarn in the root directory and the &quot;example&quot; directory.</li>
 				<li>In the root directory run <code>yarn link</code></li>
-				<li>Change directory to <code>example</code> and run <code>yarn link &quot;winderful-react-breakpoints&quot;</code></li>
-				<li>You have now created a symlink from the example React app to the root library, any changes you make in the root will be reflected in example once you build.</li>
-				<li>In the root directory run <code>yarn build</code> to generate a build with your changes.</li>
+				<li>Change directory to <code>example</code> and run <code>yarn link &quot;@winderful/react-breakpoints&quot;</code></li>
+				<li><p>You have now created a symlink from the example React app to the root library, any changes you make in the root will be reflected in example once you build. NOTE: This does not work in the &quot;example-native&quot; project, I believe CRNA still has problems with symlinks. I tried <code>yarn add file:../</code> but this hangs indefinately at 1116/1117. Please share any thoughts/suggestions.</p>
+				</li>
+				<li><p>In the root directory run <code>yarn build</code> to generate a build with your changes.</p>
+				</li>
 				<li>In the example directory run <code>yarn start</code> to launch the example React application.</li>
 			</ol>
 			<h3 id="additional-tools">Additional Tools</h3>
@@ -1041,7 +1043,13 @@ const App = () =&gt; (
 			<p>Automatic version switching for Node.js
 			.node-version is used to indicate the desired version of Node.</p>
 			<p><a href="https://github.com/wbyoung/avn">https://github.com/wbyoung/avn</a></p>
-			<pre><code>&gt; yarn <span class="hljs-meta">global</span> <span class="hljs-keyword">add </span>avn avn-nvm</code></pre>
+			<pre><code>&gt; yarn <span class="hljs-meta">global</span> <span class="hljs-keyword">add </span>avn avn-nvm</code></pre><h4 id="troubleshooting">Troubleshooting</h4>
+			<ul>
+				<li>I have issues with RN Packager and have to run this anytime my IP address changes</li>
+			</ul>
+			<pre><code>&gt; <span class="hljs-variable">$env</span><span class="hljs-symbol">:REACT_NATIVE_PACKAGER_HOSTNAME</span> = <span class="hljs-string">"*my-ip-address*"</span></code></pre><ul>
+				<li>Cant <code>yarn link</code> example-native. I belive CRNA has a known issue with Symlinks. Not sure what the solution for this is. Open to suggestions.</li>
+			</ul>
 		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>

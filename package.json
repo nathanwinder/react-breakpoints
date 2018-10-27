@@ -5,7 +5,8 @@
   "types": "lib/index.d.ts",
   "private": true,
   "scripts": {
-    "build": "yarn tsc"
+    "build": "yarn tsc",
+    "docs": "yarn typedoc"
   },
   "devDependencies": {
     "@types/react": "^16.4.18",

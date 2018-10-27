@@ -29,4 +29,3 @@ export declare class NativeResizeEventSource implements IResizeEventSource {
     removeEventListener(event: "resize", listener: () => void): void;
 }
 export {};
-//# sourceMappingURL=NativeResizeEventSource.d.ts.map

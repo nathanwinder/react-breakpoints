@@ -30,4 +30,3 @@ export declare type BreakpointProps<T, B extends string> = {
 };
 export declare type IWithBreakpointProps<P, B extends string, K extends keyof P> = Omit<P, K> & Pick<BreakpointProps<P, B>, K>;
 export declare type IWithBreakpoints<P, B extends string, K extends keyof P> = React.ComponentType<Omit<P, K> & Pick<BreakpointProps<P, B>, K>>;
-//# sourceMappingURL=types.d.ts.map
